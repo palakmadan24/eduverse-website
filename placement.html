@@ -24,7 +24,8 @@
       <nav>
         <a href="index.html"><img src="images/eduverse img.png" alt="logo" /></a>
         <div class="nav-links" id="nav-links">
-          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <i class="fa fa-solid fa-xmark" onclick="document.getElementById('nav-links').style.right='-200px'"></i>
+        
           <ul>
             <li>
               <a href="./index.html">HOME</a>
@@ -35,7 +36,8 @@
             <li><a href="./contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        <i class="fa fa-solid fa-bars" onclick="document.getElementById('nav-links').style.right='0'"></i>
+    
       </nav>
       
     </section>
@@ -112,7 +114,8 @@
   <p>Join EduVerse University and step into a successful future.</p>
   <a href="contact.html" class="cta-btn">Contact Placement Office</a>
 </section>
-
+<script src="script.js"></script>
+  
 </body>
 </html>
 

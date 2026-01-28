@@ -24,7 +24,7 @@
       <nav>
         <a href="index.html"><img src="images/eduverse img.png" alt="logo" /></a>
         <div class="nav-links" id="nav-links">
-          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <i class="fa fa-solid fa-xmark" onclick="document.getElementById('nav-links').style.right='-200px'"></i>
           <ul>
             <li>
               <a href="./index.html">HOME</a>
@@ -35,18 +35,16 @@
             <li><a href="./contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        <i class="fa fa-solid fa-bars" onclick="document.getElementById('nav-links').style.right='0'"></i>
+      
       </nav>
       <h1>Our Courses</h1>
     </section>
 
     <!-- courses  -->
     <section class="program-slider-section">
-
   <h2 class="slider-heading">Explore Our Programs</h2>
-
-  <div class="program-slider">
-
+    <div class="program-slider">
     <div class="program-card-slide">
       <h3>B.Tech CSE</h3>
       <p>Computer Science Engineering</p>
@@ -87,18 +85,13 @@
 
 </section>
 
-
     <!-- facilities  -->
      <section class="campus">
       
-      <h1>
-     Welcome to EDUVERSE
-     </h1>
-      <p>
-      Education, Innovation & Growth - Discover our world-class campus and facilities
-      </p>
-    <section class="facilities-section">
-  <div class="facilities-box">
+      <h1> Welcome to EDUVERSE</h1>
+      <p>Education, Innovation & Growth - Discover our world-class campus and facilities</p>
+     <section class="facilities-section">
+    <div class="facilities-box">
 
     <div class="facilities-title">
       Our Facilities
@@ -122,7 +115,6 @@
 </html>
     <!-- footer  -->
     <footer class="home-footer">
-
     <div class="footer-top">
 
         <!-- About -->
@@ -152,7 +144,6 @@
                 <li><a href="#">B.Tech CSE</a></li>
                 <li><a href="#">AI & ML</a></li>
                 <li><a href="#">MBA</a></li>
-                
             </ul>
         </div>
 
@@ -175,7 +166,7 @@
     </div>
 
 </footer>
-
-    </script>
+</script>
+    <script src="script.js"></script>
   </body>
 </html>

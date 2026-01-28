@@ -24,7 +24,8 @@
       <nav>
         <a href="index.html"><img src="images/eduverse img.png" alt="logo" /></a>
         <div class="nav-links" id="nav-links">
-          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <i class="fa fa-solid fa-xmark" onclick="document.getElementById('nav-links').style.right='-200px'"></i>
+          
           <ul>
             <li>
               <a href="./index.html">HOME</a>
@@ -35,19 +36,18 @@
             <li><a href="./contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        <i class="fa fa-solid fa-bars" onclick="document.getElementById('nav-links').style.right='0'"></i>
+      
       </nav>
       <h1>Contact Us</h1>
     </section>
     <!-- Contact us Content -->
     
              <section class="contact-section">
-
         <h1>Contact EduVerse University</h1>
         <p class="subtitle">
             We’re here to help you. Reach out for admissions, programs, or general inquiries.
         </p>
-
         <div class="contact-container">
 
             <!-- Contact Form -->
@@ -58,11 +58,8 @@
                     <input type="text" placeholder="Full Name" required>
                     <input type="email" placeholder="Email Address" required>
                     <input type="tel" placeholder="Phone Number">
-
                     <input type="text" placeholder="Subject">
-
                     <textarea rows="5" placeholder="Your Message"></textarea>
-
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -70,19 +67,15 @@
             <!-- Contact Info -->
             <div class="contact-info">
                 <h2>Our Campus</h2>
-
                 <p><strong>📍 Address:</strong> EduVerse University, Knowledge Park, India</p>
                 <p><strong>📞 Phone:</strong> +91 98765 43210</p>
                 <p><strong>📧 Email:</strong> info@eduverse.edu</p>
-
                 <h3>Office Hours</h3>
                 <p>Monday – Friday: 9:00 AM – 5:00 PM</p>
                 <p>Saturday: 9:00 AM – 1:00 PM</p>
             </div>
-
-        </div>
-
-    </section>
-
+        </div>   
+</section> 
+     <script src="script.js"></script>
 </body>
 </html>
